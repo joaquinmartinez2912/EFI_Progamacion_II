@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100&display=swap');
+
 :root{
---main-font-family: 'Bebas Neue';
---font-logo: 'Notable';
+--main-font-family: 'Petrona';
+--font-logo: 'Be Vietnam Pro';
 --sect-font: 'Abril Fatface';
 
 }
@@ -54,8 +55,14 @@ form{
 
 }
 
+.botonLogeo {
+    width: 180px;
+    height: 50px;
+    background-color: #FED43F;
+}
+
 @media (max-width: 992px) {
     .offcanvas-body {
-        background: linear-gradient(to right, #ad312b, #b6624f);
+        background: linear-gradient(to right, #09789B, #ECECEC);
     }
   }
