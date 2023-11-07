@@ -72,6 +72,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 1px solid var(--positive);
     text-decoration: none;
     width: 180px;
     height: 50px;
@@ -126,9 +127,15 @@ footer {
     text-align: center;
 }
 
+.menuCanvas {
+    color: var(--background);
+    font-family: var(--font-titulo);
+
+}
+
 
 @media (max-width: 992px) {
     .offcanvas-body {
-        background: linear-gradient(to right, #09789B, #ECECEC);
+        background-color: var(--primary-first);
     }
   }
