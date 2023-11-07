@@ -23,8 +23,7 @@
 }
 
 .cuerpo{
-    margin-top: 160px ;
-    margin-bottom: 160px ;
+    height: 494px;
     padding: 0px;
 }
 
@@ -32,6 +31,7 @@ p {
     color: var(--text-color);
     margin: 0px;
     font-size: 20px;
+    font-weight: 500;
 }
 
 .form-control input{
@@ -40,8 +40,32 @@ p {
 
 .form-control::placeholder {
     text-align: center;
-    color: #09789B;
+    color: var(--primary-first);
 }
+
+.form-control2 {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color:  #ECECEC ;
+  
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+.form-control2::placeholder {
+    text-align: start;
+    color: #09789B;
+  }
 
 .botonLogeo {
     display: flex;
@@ -54,9 +78,40 @@ p {
     background-color: var(--secundary-second);
 }
 
+.botonGeneral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 240px;
+    height: 50px;
+    background-color: var(--secundary-third);
+}
+
+.botonVolver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    background-color: var(--secundary-third);
+}
+
 footer {
     height: 72px;
     background-color: var(--secundary-first);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-alt {
+    height: 72px;
+    background-color: var(--background);
     display: flex;
     text-align: center;
     justify-content: center;
