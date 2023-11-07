@@ -1,68 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
 
 :root{
---main-font-family: 'Petrona';
+--font-content: 'Petrona';
 --font-logo: 'Be Vietnam Pro';
---sect-font: 'Abril Fatface';
---blue: #09789B;
---grey: #ECECEC;
---footer: #313045;
---yellow: #FED43F;
+--font-titulo: 'Average Sans';
+--primary-first: #09789B;
+--primary-second: #ECECEC;
+--secundary-first: #313045;
+--secundary-second: #FED43F;
+--secundary-third: #62D5FA;
+--positive: #131313 ;
+--negative: #F68764;
+--background: #FFFFFF;
+--text-color: #000000;
 }
 
-.main-font-family{
-    font-family: var(--main-font-family);
-
+.encabezado {
+    background-color: var(--primary-first);
+    padding: 0px;
 }
 
-.font-logo{
-    font-family: var(--font-logo);
-
+.cuerpo{
+    margin-top: 160px ;
+    margin-bottom: 160px ;
+    padding: 0px;
 }
 
-.sect-font{
-    font-family: var(--sect-font);
-
+p {
+    color: var(--text-color);
+    margin: 0px;
+    font-size: 20px;
 }
 
-.social{
-    background-color: rgb(59, 59, 59);
-
+.form-control input{
+    background-color: var(--primary-second);
 }
 
-.contact-bg-space{
-    height: 500px;   
-    padding: 20px;
-    background-color:antiquewhite; 
-
-}
-
-.contact-bg-space svg{
-    margin: 7px;
-}
-
-.form-contact{
-    background-color:aliceblue;
-
-}
-
-.btn-close-position{
-    text-align: end!important
-}
-
-form{
-    padding: 20px;
-
+.form-control::placeholder {
+    text-align: center;
+    color: #09789B;
 }
 
 .botonLogeo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
     width: 180px;
     height: 50px;
-    background-color: #FED43F;
+    background-color: var(--secundary-second);
 }
+
+footer {
+    height: 72px;
+    background-color: var(--secundary-first);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ footer p {
+    color: var(--background);
+    size: 50px;
+    font-family: var(--font-content);
+    text-align: center;
+}
+
 
 @media (max-width: 992px) {
     .offcanvas-body {
