@@ -22,10 +22,47 @@
     padding: 0px;
 }
 
+.encabezadoCard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primary-first);
+    padding: 0px;
+    height: 60px;
+}
+
+.pCard {
+    color: var(--background);
+    font-family: var(--font-titulo);
+    padding-left: 10px;
+}
+
+.pContacto {
+    color: var(--secundary-second);
+    font-family: var(--font-titulo);
+    font-size: 24px;
+    -webkit-text-stroke: 0.5px #000000;
+ 
+}
+
+.cardContact {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--positive);
+}
+
 .cuerpo{
     height: 494px;
     padding: 0px;
 }
+
+.cuerpoContactos {
+    height: 740px;
+    background-color: var(--primary-second);
+
+}
+
 
 p {
     color: var(--text-color);
