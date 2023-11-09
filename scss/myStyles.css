@@ -57,10 +57,16 @@
     padding: 0px;
 }
 
+.cuerpoLogeo {
+    height: 670px;
+    background-color: var(--primary-first);
+    display: flex;
+    flex-direction: column;
+}
+
 .cuerpoContactos {
     height: 740px;
     background-color: var(--primary-second);
-
 }
 
 
@@ -149,6 +155,18 @@ p {
     background-color: var(--secundary-second);
 }
 
+.botonLogeoInicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--positive);
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    background-color: var(--secundary-third);
+}
+
 .botonGeneral {
     display: flex;
     justify-content: center;
@@ -178,6 +196,16 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.footerLogeo {
+    height: 72px;
+    background-color: var(--secundary-first);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-first);
 }
 
 .footer-alt {
