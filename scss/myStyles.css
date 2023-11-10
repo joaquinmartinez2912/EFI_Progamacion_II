@@ -25,9 +25,52 @@
     padding: 0px;
 }
 
+.encabezadoCard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primary-first);
+    padding: 0px;
+    height: 60px;
+}
+
+.pCard {
+    color: var(--background);
+    font-family: var(--font-titulo);
+    padding-left: 10px;
+}
+
+.pContacto {
+    color: var(--secundary-second);
+    font-family: var(--font-titulo);
+    font-size: 24px;
+    -webkit-text-stroke: 0.5px #000000;
+ 
+}
+
+.cardContact {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--positive);
+}
+
+
 .cuerpoLogin{
     height: 494px;
     padding: 0px;
+}
+
+.cuerpoLogeo {
+    height: 670px;
+    background-color: var(--primary-first);
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpoContactos {
+    height: 740px;
+    background-color: var(--primary-second);
 }
 
 p {
@@ -70,6 +113,38 @@ p {
     color: #09789B;
   }
 
+.form-control3 {
+    display: block;
+    width:125px ;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color:  #ECECEC ;
+  
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+.form-control3::placeholder {
+    text-align: start;
+    color: #09789B;
+    padding: 0px;
+  }
+
+.contendorPago{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+}
+
 .botonAmarillo {
     display: flex;
     justify-content: center;
@@ -81,6 +156,18 @@ p {
     border-radius: 20px;
     padding: 10px;
     width: fit-content;
+}
+
+.botonLogeoInicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--positive);
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    background-color: var(--secundary-third);
 }
 
 .botonGeneral {
@@ -105,6 +192,16 @@ footer {
     align-items: center;
 }
 
+.footerLogeo {
+    height: 72px;
+    background-color: var(--secundary-first);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-first);
+}
+
 .footer-alt {
     height: 72px;
     background-color: var(--background);
@@ -113,7 +210,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 
  footer p {
     color: var(--background);
@@ -125,7 +221,6 @@ footer {
 .menuCanvas {
     color: var(--background);
     font-family: var(--font-titulo);
-
 }
 a {
     text-decoration: none;
