@@ -14,7 +14,7 @@
             color: #09789B;
         }
     </style>
-    <title>Inicio</title>
+    <title>Evento</title>
 </head>
 
 <body>
@@ -58,59 +58,82 @@
             </div>
         </nav>
     </div>
-
-               
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <a href="evento.html">
-                    <div class="card cardEvento">
-                        <img class="card-img-top" src="./img/oktober.png" alt="Card image cap">
-                        <div class="card-body">
-                            <div class="cardEncabezado">
-                                <p class="fecha">16/10</p>
-                                <p class="edad">+18</p>
-                            </div>
-                            <p class="card-text"><i class="bi bi-geo-alt"></i>Villa General Belgrano, Córdoba</p>
-                            
-                           
-                                <section class="containerEvento">
-                                    <a  class="btn btnEvento"><i class="bi bi-heart-fill"></i></i></a>
-                                    <h3 class="nombreEvento">OktoberFest</h3>
-                                </section>
-                            
-                        </div>
-                    </div>
-                </a>
-
-                <a href="evento.html">
-                    <div class="card cardEvento">
-                        <img class="card-img-top" src="./img/yerba.png" alt="Card image cap">
-                        <div class="card-body">
-                            <div class="cardEncabezado">
-                                <p class="fecha">02/11</p>
-                                <p class="edad">+18</p>
-                            </div>
-                            <p class="card-text"><i class="bi bi-geo-alt"></i>Apóstoles, Misiones</p>
-                            <section class="containerEvento">
-                                <a  class="btn btnEvento"><i class="bi bi-heart-fill"></i></i></a>
-                                <h3 class="nombreEvento">Fiesta de la Yerba</h3>
-                            </section>
-                        </div>
-                    </div>
-                </a>
-
+    
+    
+    
+    <div class="container bodyEvento">
+        <img class="card-img-top" src="./img/oktober.png" alt="Card image cap">
+        <div class="card-body">
+            <h3 class="nombreEvento">OktoberFest</h3>
+            <div class="row rowSpace p-2">
+                <p class="fecha">16 de octubre</p>
+                <p >22:00hs Open Doors</p>
+                <p><i class="bi bi-geo-alt"></i>Villa General Belgrano, Córdoba</p>
             </div>
+
+            <div class="row rowSpace">
+                <section class="producto">
+                    <div class="agregarCantidad">
+                        <button class="btn botonMenos"><i class="bi bi-dash-lg"></i></button>
+                        <p class="cantidad">1</p>
+                        <button class="btn botonMas"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <p>Tickets Generales</p>
+                    <p class="precio">$12.000</p>
+                </section>
+                <section class="producto">
+                    <div class="agregarCantidad">
+                        <button class="btn botonMenos"><i class="bi bi-dash-lg"></i></button>
+                        <p class="cantidad">0</p>
+                        <button class="btn botonMas"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <p >Tickets VIP</p>
+                    <p class="precio">$20.000</p>
+                </section>
+                <section class="producto">
+                    <div class="agregarCantidad">
+                        <button class="btn botonMenos"><i class="bi bi-dash-lg"></i></button>
+                        <p class="cantidad">0</p>
+                        <button class="btn botonMas"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <p>Pack Especial x4</p>
+                    <p class="precio">$90.000</p>
+                </section>
+            </div>
+        
+            <div class="row rowSpace">
+                <section class="resumenItem">
+                    <p>Cantidad de entradas</p>
+                    <p>1</p>
+                </section>
+                <section class="resumenItem">
+                    <p>Subtotal</p>
+                    <p>$12.000</p>
+                </section>
+                <section class="resumenItem">
+                    <p>Cargo por servicio</p>
+                    <p>$120</p>
+                </section>
+                <section class="resumenItem">
+                    <p><b>TOTAL</b></p>
+                    <p><b>$12.120</b></p>
+                </section>
+            </div>
+            <section class="containerBoton mt-2">
+                <a href="detalle.html">
+                    <button  class="botonGeneral"><p>Comprar</p></button>
+                </a>
+            </section>
+
+            <section class="containerBoton mt-2 mb-2">
+                <a href="inicio.html">
+                    <button class="botonGeneral"><p>Volver</p></button>
+                </a>
+            </section>
         </div>
     </div>
-
-</body>
-
     <footer>
         <p>Terminos y Condiciones</p>
     </footer>
-
-
-
+    </body>
 </html>

@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Share+Tech+Mono&display=swap');
 
 :root{
 --font-content: 'Petrona';
 --font-logo: 'Be Vietnam Pro';
 --font-titulo: 'Average Sans';
+--font-evento: 'Black Han Sans';
 --primary-first: #09789B;
 --primary-second: #ECECEC;
 --secundary-first: #313045;
 --secundary-second: #FED43F;
 --secundary-third: #62D5FA;
---positive: #131313 ;
---negative: #F68764;
+--negative-first: #131313 ;
+--negative-second: #F68764;
+--important-color: red;
 --background: #FFFFFF;
 --text-color: #000000;
 }
@@ -22,7 +25,7 @@
     padding: 0px;
 }
 
-.cuerpo{
+.cuerpoLogin{
     height: 494px;
     padding: 0px;
 }
@@ -67,16 +70,17 @@ p {
     color: #09789B;
   }
 
-.botonLogeo {
+.botonAmarillo {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid var(--positive);
     text-decoration: none;
-    width: 180px;
     height: 50px;
     background-color: var(--secundary-second);
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
 }
 
 .botonGeneral {
@@ -85,20 +89,11 @@ p {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    width: 240px;
     height: 50px;
     background-color: var(--secundary-third);
-}
-
-.botonVolver {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    width: 120px;
-    height: 50px;
-    background-color: var(--secundary-third);
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
 }
 
 footer {
@@ -132,7 +127,141 @@ footer {
     font-family: var(--font-titulo);
 
 }
+a {
+    text-decoration: none;
+}
+.cardEvento {
+    width: 345px;
+    margin-left: -5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary-second);
+    border: solid 1px var(--negative-first);
+    border-radius: 5px;
+}
 
+.containerEvento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--negative-first);
+    position: relative;
+}
+
+.containerEvento h3{
+    margin-left: 50px;
+}
+
+.btnEvento{
+    -webkit-text-stroke: 1px var(--text-color);
+    color: var(--background);
+    position: absolute;
+    left: 10px;
+}
+
+.btnEvento:hover{
+    color: var(--secundary-third);
+}
+
+.nombreEvento{
+    margin-top: 20px;
+    padding: 0px;
+    font-family: var(--font-evento);
+    font-size: 28px;
+    color: var(--text-color);
+    justify-content: center;
+    text-align: center;
+}
+
+.cardEncabezado{
+    border-top: 1px solid var(--negative-first);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fecha{
+    font-weight: bold;
+    color: var(--negative-first);
+}
+
+.edad{
+    font-weight: bold;
+    color: var(--important-color);
+}
+ 
+.cantidad{
+    background-color: var(--background);
+    border: solid 1px var(--negative-first);
+   
+    width: 30px;
+    text-align: center;
+    display: block;
+}
+
+.agregarCantidad{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-left: -10px;
+    align-items: center;
+    text-align: center;
+}
+
+.botonMenos{
+    color: var(--important-color);
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px var(--negative-first);
+    padding: 0px 5px 0px 5px;
+}
+
+.botonMas{
+    color: green;
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px var(--negative-first);
+    padding: 0px 5px 0px 5px;
+}
+
+.nombreProducto{
+    text-align: left;
+}
+
+.bodyEvento{
+    background-color: var(--primary-second);
+}
+
+.rowSpace{
+    border: solid 1px var(--negative-first);
+}
+
+.precio{
+    color: var(--secundary-third);    
+    -webkit-text-stroke: 1px var(--text-color);
+    margin-left: 10px;
+}
+
+.producto{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.resumenItem{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.containerBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.linkContactos{
+    color: var(--secundary-second);
+    -webkit-text-stroke: 0.5px var(--text-color);
+}
 
 @media (max-width: 992px) {
     .offcanvas-body {
