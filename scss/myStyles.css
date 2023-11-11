@@ -15,7 +15,8 @@
 --secundary-third: #62D5FA;
 --negative-first: #131313 ;
 --negative-second: #F68764;
---important-color: red;
+--important-color: #F70D0D;
+--important-color2: #58B042;
 --background: #FFFFFF;
 --text-color: #000000;
 }
@@ -44,7 +45,7 @@
     color: var(--secundary-second);
     font-family: var(--font-titulo);
     font-size: 24px;
-    -webkit-text-stroke: 0.5px #000000;
+    -webkit-text-stroke: 0.5px var(--text-color);
  
 }
 
@@ -100,7 +101,7 @@ p {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-color:  #ECECEC ;
+    background-color:  var(--primary-second) ;
   
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);
@@ -110,7 +111,7 @@ p {
 
 .form-control2::placeholder {
     text-align: start;
-    color: #09789B;
+    color: var(--primary-first);
   }
 
 .form-control3 {
@@ -124,7 +125,7 @@ p {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-color:  #ECECEC ;
+    background-color:  var(--primary-second) ;
   
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);
@@ -134,7 +135,7 @@ p {
 
 .form-control3::placeholder {
     text-align: start;
-    color: #09789B;
+    color: var(--primary-first);
     padding: 0px;
   }
 
@@ -310,7 +311,7 @@ a {
 }
 
 .botonMas{
-    color: green;
+    color: var(--important-color2);
     font-size: 25px;
     -webkit-text-stroke: 0.5px var(--negative-first);
     padding: 0px 5px 0px 5px;
@@ -349,6 +350,22 @@ a {
 }
 
 .containerBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.containerQR{
+    display: flex;
+    flex-direction: column;
+}
+
+.textoQR {
+    color: var(--important-color);
+    font-family: var(--font-titulo);
+    margin: 0px;
+}
+
+.centrar {
     display: flex;
     justify-content: center;
 }
