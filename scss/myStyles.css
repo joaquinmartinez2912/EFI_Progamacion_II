@@ -96,6 +96,11 @@ p {
     background-color: var(--primary-second);
 }
 
+.formContainer {
+    background-color: var(--background);
+    border: 1px solid var(--negative-first);
+}
+
 .form-control::placeholder {
     text-align: center;
     color: var(--primary-first);
