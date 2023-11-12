@@ -16,50 +16,62 @@
     <!-- samsung galaxy s8+ -->
     <div class="container-fluid encabezado ">
         <nav class="navbar navbar-expand-lg">
-
             <div class="container-fluid">
                 <!-- Logo imagen -->
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="Bootstrap" width="200" height="150">
-                </a>
-
-
-                <!-- Boton offcanvas para menu responsive -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="./inicio.html">
+                    <img src="./img/logo.svg" alt="Bootstrap" width="220" height="140">
+                </a>  
+                 <!-- Boton offcanvas para menu responsive -->
+                 <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
+                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                 <i class="bi bi-bell botonNotificaciones"></i>
+                </button>
+                 <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
+                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                 <i class="bi bi-list botonMenuIcono"></i>
                 </button>
 
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <!-- Desde aca, todo lo que pasa a estar en el offcanvas desde tamaño lg -->
-                    <div class="offcanvas-header bg-black " style="color: antiquewhite;">
-                        <img src="./img/ticketAr.svg" alt="Bootstrap" width="150" height="70">
-                        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
+             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                 <!-- Desde aca, todo lo que pasa a estar en el offcanvas desde tamaño lg -->
+                 <div class="offcanvas-header bg-black " style="color: antiquewhite;">
+                     <img src="./img/logo.svg" alt="Bootstrap" width="160" height="80">
+                     <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"
+                         aria-label="Close"></button>
+                 </div>
 
-                    <div class="offcanvas-body">
+                 <div class="offcanvas-body">
 
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                            <li class="d-lg-none  nav-item fs-5 align-self-start align-self-lg-center">
-                                <a class="nav-link menuCanvas" aria-current="page" href="#">Mi perfil</a>
-                            </li>
-                            <li class="d-lg-none  nav-item fs-5 align-self-start align-self-lg-center">
-                                <a class="nav-link menuCanvas" aria-current="page" href="#">Eventos</a>
-                            </li>
-                            <li class="d-lg-none  nav-item fs-5 align-self-start align-self-lg-center">
-                                <a class="nav-link menuCanvas" aria-current="page" href="#">Mis eventos</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                         <li class="nav-item fs-5 dropdown align-self-start align-self-lg-center">
+                            <a class="nav-link dropdown-toggle menuCanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Mis eventos
+                            </a>
+                            <ul class="dropdown-menu dropdownContainer fs-5">
+                              <li><a class="dropdown-item" href="historial.html">Historial de compras</a></li>
+                              <li><a class="dropdown-item " href="favoritos.html">Favoritos</a></li>
+                            </ul>
+                        </li>
+                    
+                        <li class="nav-item fs-5 dropdown align-self-start align-self-lg-center">
+                            <a class="nav-link dropdown-toggle menuCanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Mi Perfil
+                            </a>
+                            <ul class="dropdown-menu dropdownContainer fs-5">
+                              <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+                              <li><a class="dropdown-item " href="#">Editar perfil</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="d-lg-none nav-item fs-5 align-self-start align-self-lg-center">
+                             <a class="nav-link menuCanvas mensajeImportante" aria-current="page" href="contactos.html">Cerrar Sesión</a>
+                         </li>
+                     </ul>
+                 </div>
         </nav>
     </div>
 
-    <div class="container-fluid d-flex align-items-center justify-content-center col-12  cuerpoLogin">
+    <div class="container-fluid d-flex align-items-center justify-content-center col-12 cuerpoLogin">
         <form class="col-10">
             <div class="d-flex justify-content-center">
                 <h5>Tarjeta de Débito</h5>
@@ -75,7 +87,7 @@
                 <input type="text" class="form-control2" id="caja2" placeholder="XXXX-XXXX-XXXX-XXXX">
             </div>
             <br>
-            <div class="contendorPago" style="display: flex;">
+            <div class="botonera" style="display: flex;">
                 <div class="form-group col-5">
                     <label for=""><p>Vencimiento</p></label>
                     <input type="text" class="form-control3" id="caja2" placeholder="MM/YY">
@@ -87,23 +99,26 @@
                 </div>
             </div>
             <br><br>
-            <section class="containerBoton mt-2 mb-2">
-                <a href="inicio.html">
-                    <button class="botonAmarillo" type="button"><p>Aceptar</p></button>
-                </a>
-            </section>
-
-            <!-- <div class="d-flex justify-content-center">
-                <a href="inicio.html" class="btn btn-primary botonAmarillo"><p>Aceptar</p></a>
-            </div> -->
-
-
+            
+            
+            <div class="botonera">
+                <section class="containerBoton mt-2 mb-2">
+                    <a href="metodoPago.html">
+                        <button class="botonGeneral" type="button"><p>Volver</p></button>
+                    </a>
+                </section>
+                <section class="containerBoton mt-2 mb-2">
+                    <a href="confirmarPago.html">
+                        <button class="botonAmarillo" type="button"><p>Aceptar</p></button>
+                    </a>
+                </section>
+            </div>
         </form>
     </div>
 
 
             
-    <footer>
+    <footer class="mt-3">
         <p>Terminos y Condiciones</p>
     </footer>
 </body>

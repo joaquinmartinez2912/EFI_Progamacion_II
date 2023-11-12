@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 :root{
 --font-content: 'Petrona';
 --font-logo: 'Be Vietnam Pro';
 --font-titulo: 'Average Sans';
 --font-evento: 'Black Han Sans';
+--font-boton: 'Open Sans';
 --primary-first: #09789B;
 --primary-second: #ECECEC;
 --secundary-first: #313045;
@@ -19,6 +21,15 @@
 --important-color2: #58B042;
 --background: #FFFFFF;
 --text-color: #000000;
+}
+
+/*Para corregir detalles de posicionamiento*/
+.bodyCeleste{
+    background-color: var(--primary-first);
+}
+
+.bodyGris{
+    background-color: var(--primary-second);
 }
 
 .encabezado {
@@ -139,7 +150,7 @@ p {
     padding: 0px;
   }
 
-.contendorPago{
+.botonera{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,6 +168,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     width: fit-content;
+    font-family: var(--font-boton);
 }
 
 .botonLogeoInicial {
@@ -169,6 +181,7 @@ p {
     width: 180px;
     height: 50px;
     background-color: var(--secundary-third);
+    font-family: var(--font-boton);
 }
 
 .botonGeneral {
@@ -182,6 +195,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     width: fit-content;
+    font-family: var(--font-boton);
 }
 
 footer {
@@ -195,12 +209,11 @@ footer {
 
 .footerLogeo {
     height: 72px;
-    background-color: var(--secundary-first);
+    background-color: var(--primary-first);
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-first);
 }
 
 .footer-alt {
@@ -221,11 +234,42 @@ footer {
 
 .menuCanvas {
     color: var(--background);
-    font-family: var(--font-titulo);
+    font-family: var(--font-boton);
+    -webkit-text-stroke: 0.5px var(--text-color);
+    font-size: 25px;
 }
+
 a {
     text-decoration: none;
 }
+
+.botonMenu{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    border: var(--primary-first);
+
+}
+
+.botonMenuIcono{
+    font-size: 50px;
+    color: var(--secundary-third);
+}
+
+.botonNotificaciones{
+    font-size: 25px;
+    color: var(--secundary-third);
+}
+
+.dropdownContainer{
+    background-color: var(--primary-first);
+    border-color: var(--primary-first);
+}
+.dropdownContainer a{
+    color: var(--background);
+    font-family: var(--font-boton);
+}
+
 .cardEvento {
     width: 345px;
     margin-left: -5px;
@@ -373,6 +417,10 @@ a {
 .linkContactos{
     color: var(--secundary-second);
     -webkit-text-stroke: 0.5px var(--text-color);
+}
+
+.mensajeImportante{
+    color: var(--important-color);
 }
 
 @media (max-width: 992px) {
