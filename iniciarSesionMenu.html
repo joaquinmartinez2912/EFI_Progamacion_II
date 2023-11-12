@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="scss/styles.css">
     <link rel="stylesheet" href="scss/myStyles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <title>ticketAr</title>
+    <title>Iniciar Sesión</title>
 </head>
 
 <body>
@@ -16,26 +16,28 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <!-- Logo imagen -->
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./img/ticketAr.svg" alt="Bootstrap" width="230" height="150">
+                <a class="navbar-brand" href="./inicio.html">
+                    <img src="./img/logo.svg" alt="Bootstrap" width="230" height="150">
                 </a>  
             </div>
         </nav>
     </div>
 
-    <div class="container-fluid d-flex align-items-center justify-content-center col-12  cuerpo">
+    <div class="container-fluid d-flex align-items-center justify-content-center col-12  cuerpoLogin">
                 <form class="col-10">
                     <div class="form-group">
                         <input  type="text" class="form-control" id="caja1" placeholder="Usuario o email">
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="caja2" placeholder="Contraseña">
+                        <input type="password" class="form-control" id="caja2" placeholder="Contraseña">
                     </div>
                     <br>
-                    <div class="d-flex justify-content-center">
-                        <a href="inicio.html" class="btn btn-primary botonLogeo"><p>Iniciar Sesión</p></a>
-                    </div>
+                    <section class="containerBoton mt-2 mb-2">
+                        <a href="inicioSesionActiva.html">
+                            <button type="button" class="botonAmarillo"><p>Iniciar Sesión</p></button>
+                        </a>
+                    </section>
                 </form>
     </div>
 

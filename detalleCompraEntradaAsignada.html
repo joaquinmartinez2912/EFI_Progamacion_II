@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="scss/myStyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Detalle de compra</title>
+</head>
+
+<body class="bodyGris">
+
+<!-- samsung galaxy s8+ -->
+<div class="container-fluid encabezado ">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!-- Logo imagen -->
+            <a class="navbar-brand" href="./inicioSesionActiva.html">
+                <img src="./img/logo.svg" alt="Bootstrap" width="220" height="140">
+            </a>  
+             <!-- Boton offcanvas para menu responsive -->
+             <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
+             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+             <i class="bi bi-bell botonNotificaciones"></i>
+            </button>
+             <button class="navbar-toggler botonMenu" type="button" data-bs-toggle="offcanvas"
+             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+             <i class="bi bi-list botonMenuIcono"></i>
+            </button>
+
+         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+             aria-labelledby="offcanvasNavbarLabel">
+             <!-- Desde aca, todo lo que pasa a estar en el offcanvas desde tamaño lg -->
+             <div class="offcanvas-header bg-black " style="color: antiquewhite;">
+                 <img src="./img/logo.svg" alt="Bootstrap" width="160" height="80">
+                 <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"
+                     aria-label="Close"></button>
+             </div>
+
+             <div class="offcanvas-body">
+
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="d-lg-none nav-item fs-5 align-self-start align-self-lg-center">
+                        <a class="nav-link menuCanvas" aria-current="page" href="inicioSesionActiva.html">Inicio</a>
+                    </li>
+                    
+                     <li class="nav-item fs-5 dropdown align-self-start align-self-lg-center">
+                        <a class="nav-link dropdown-toggle menuCanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mis eventos
+                        </a>
+                        <ul class="dropdown-menu dropdownContainer fs-5">
+                          <li><a class="dropdown-item" href="historial.html">Historial de compras</a></li>
+                          <li><a class="dropdown-item " href="favoritos.html">Favoritos</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="nav-item fs-5 dropdown align-self-start align-self-lg-center">
+                        <a class="nav-link dropdown-toggle menuCanvas" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mi Perfil
+                        </a>
+                        <ul class="dropdown-menu dropdownContainer fs-5">
+                          <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+                          <li><a class="dropdown-item " href="#">Editar perfil</a></li>
+                          <li><a class="dropdown-item " href="#">Mi Agenda</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="d-lg-none nav-item fs-5 align-self-start align-self-lg-center">
+                         <a class="nav-link menuCanvas mensajeImportante" aria-current="page" href="inicio.html">Cerrar Sesión</a>
+                     </li>
+                 </ul>
+             </div>
+    </nav>
+</div>
+    
+    
+    <div class="container bodyEvento">
+        <div >
+            <div class="row rowSpace">
+                <h2 class="text-center mt-3">Detalle de la compra</h2>
+                <h3 class="nombreEvento">OktoberFest</h3>
+            </div>
+        
+            <div class="row rowSpace">
+                <section class="resumenItem">
+                    <p>Cantidad de entradas</p>
+                    <p>2</p>
+                </section>
+                <section class="resumenItem">
+                    <p>Subtotal</p>
+                    <p>$24.000</p>
+                </section>
+                <section class="resumenItem">
+                    <p>Cargo por servicio</p>
+                    <p>$240</p>
+                </section>
+                <section class="resumenItem">
+                    <p><b>TOTAL</b></p>
+                    <p><b>$24.240</b></p>
+                </section>
+            </div>
+
+            <div class="row rowSpace p-3">
+                <p>Entrada asignada a Juan Perez</p>
+            </div>
+
+            <section class="containerBoton mt-4">
+                <a href="metodoPago.html">
+                    <button  class="botonGeneral"><p>Seleccionar medio de pago</p></button>
+                </a>
+            </section>
+            
+            <section class="containerBoton mt-3 mb-2">
+                <a href="eventoSesionActiva.html">
+                    <button class="botonGeneral"><p>Volver</p></button>
+                </a>
+            </section>
+        </div>
+   </div>
+   <footer class="mt-4">
+    <p>Terminos y Condiciones</p>
+</footer>
+   </body>
+</html>

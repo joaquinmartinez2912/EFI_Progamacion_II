@@ -1,20 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 :root{
 --font-content: 'Petrona';
 --font-logo: 'Be Vietnam Pro';
 --font-titulo: 'Average Sans';
+--font-evento: 'Black Han Sans';
+--font-boton: 'Open Sans';
 --primary-first: #09789B;
 --primary-second: #ECECEC;
 --secundary-first: #313045;
 --secundary-second: #FED43F;
 --secundary-third: #62D5FA;
---positive: #131313 ;
---negative: #F68764;
+--negative-first: #131313 ;
+--negative-second: #F68764;
+--important-color: #F70D0D;
+--important-color2: #58B042;
 --background: #FFFFFF;
 --text-color: #000000;
+}
+
+/*Para corregir detalles de posicionamiento*/
+.bodyCeleste{
+    background-color: var(--primary-first);
+}
+
+.bodyGris{
+    background-color: var(--primary-second);
 }
 
 .encabezado {
@@ -22,9 +37,52 @@
     padding: 0px;
 }
 
-.cuerpo{
+.encabezadoCard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primary-first);
+    padding: 0px;
+    height: 60px;
+}
+
+.pCard {
+    color: var(--background);
+    font-family: var(--font-titulo);
+    padding-left: 10px;
+}
+
+.pContacto {
+    color: var(--secundary-second);
+    font-family: var(--font-titulo);
+    font-size: 24px;
+    -webkit-text-stroke: 0.5px var(--text-color);
+ 
+}
+
+.cardContact {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--positive);
+}
+
+
+.cuerpoLogin{
     height: 494px;
     padding: 0px;
+}
+
+.cuerpoLogeo {
+    height: 670px;
+    background-color: var(--primary-first);
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpoContactos {
+    height: 740px;
+    background-color: var(--primary-second);
 }
 
 p {
@@ -36,6 +94,11 @@ p {
 
 .form-control input{
     background-color: var(--primary-second);
+}
+
+.formContainer {
+    background-color: var(--background);
+    border: 1px solid var(--negative-first);
 }
 
 .form-control::placeholder {
@@ -54,7 +117,7 @@ p {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    background-color:  #ECECEC ;
+    background-color:  var(--primary-second) ;
   
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);
@@ -64,10 +127,56 @@ p {
 
 .form-control2::placeholder {
     text-align: start;
-    color: #09789B;
+    color: var(--primary-first);
   }
 
-.botonLogeo {
+.form-control3 {
+    display: block;
+    width:125px ;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color:  var(--primary-second) ;
+  
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+.form-control3::placeholder {
+    text-align: start;
+    color: var(--primary-first);
+    padding: 0px;
+  }
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.botonAmarillo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+    background-color: var(--secundary-second);
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
+    font-family: var(--font-boton);
+}
+
+.botonLogeoInicial {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +185,8 @@ p {
     text-decoration: none;
     width: 180px;
     height: 50px;
-    background-color: var(--secundary-second);
+    background-color: var(--secundary-third);
+    font-family: var(--font-boton);
 }
 
 .botonGeneral {
@@ -85,25 +195,26 @@ p {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    width: 240px;
     height: 50px;
     background-color: var(--secundary-third);
-}
-
-.botonVolver {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    width: 120px;
-    height: 50px;
-    background-color: var(--secundary-third);
+    border-radius: 20px;
+    padding: 10px;
+    width: fit-content;
+    font-family: var(--font-boton);
 }
 
 footer {
     height: 72px;
     background-color: var(--secundary-first);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLogeo {
+    height: 72px;
+    background-color: var(--primary-first);
     display: flex;
     text-align: center;
     justify-content: center;
@@ -119,7 +230,6 @@ footer {
     align-items: center;
 }
 
-
  footer p {
     color: var(--background);
     size: 50px;
@@ -129,10 +239,194 @@ footer {
 
 .menuCanvas {
     color: var(--background);
-    font-family: var(--font-titulo);
+    font-family: var(--font-boton);
+    -webkit-text-stroke: 0.5px var(--text-color);
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.botonMenu{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    border: var(--primary-first);
 
 }
 
+.botonMenuIcono{
+    font-size: 50px;
+    color: var(--secundary-third);
+}
+
+.botonNotificaciones{
+    font-size: 25px;
+    color: var(--secundary-third);
+}
+
+.dropdownContainer{
+    background-color: var(--primary-first);
+    border-color: var(--primary-first);
+}
+.dropdownContainer a{
+    color: var(--background);
+    font-family: var(--font-boton);
+}
+
+.cardEvento {
+    width: 345px;
+    margin-left: -5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary-second);
+    border: solid 1px var(--negative-first);
+    border-radius: 5px;
+}
+
+.containerEvento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--negative-first);
+    position: relative;
+}
+
+.containerEvento h3{
+    margin-left: 50px;
+}
+
+.btnEvento{
+    -webkit-text-stroke: 1px var(--text-color);
+    color: var(--background);
+    position: absolute;
+    left: 10px;
+}
+
+.btnEvento:hover{
+    color: var(--secundary-third);
+}
+
+.nombreEvento{
+    margin-top: 20px;
+    padding: 0px;
+    font-family: var(--font-evento);
+    font-size: 28px;
+    color: var(--text-color);
+    justify-content: center;
+    text-align: center;
+}
+
+.cardEncabezado{
+    border-top: 1px solid var(--negative-first);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fecha{
+    font-weight: bold;
+    color: var(--negative-first);
+}
+
+.edad{
+    font-weight: bold;
+    color: var(--important-color);
+}
+ 
+.cantidad{
+    background-color: var(--background);
+    border: solid 1px var(--negative-first);
+   
+    width: 30px;
+    text-align: center;
+    display: block;
+}
+
+.agregarCantidad{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-left: -10px;
+    align-items: center;
+    text-align: center;
+}
+
+.botonMenos{
+    color: var(--important-color);
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px var(--negative-first);
+    padding: 0px 5px 0px 5px;
+}
+
+.botonMas{
+    color: var(--important-color2);
+    font-size: 25px;
+    -webkit-text-stroke: 0.5px var(--negative-first);
+    padding: 0px 5px 0px 5px;
+}
+
+.nombreProducto{
+    text-align: left;
+}
+
+.bodyEvento{
+    background-color: var(--primary-second);
+}
+
+.rowSpace{
+    border: solid 1px var(--negative-first);
+}
+
+.precio{
+    color: var(--secundary-third);    
+    -webkit-text-stroke: 1px var(--text-color);
+    margin-left: 10px;
+}
+
+.producto{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.resumenItem{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.containerBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.containerQR{
+    display: flex;
+    flex-direction: column;
+}
+
+.textoQR {
+    color: var(--important-color);
+    font-family: var(--font-titulo);
+    margin: 0px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+.linkContactos{
+    color: var(--secundary-second);
+    -webkit-text-stroke: 0.5px var(--text-color);
+}
+
+.mensajeImportante{
+    color: var(--important-color);
+}
 
 @media (max-width: 992px) {
     .offcanvas-body {
